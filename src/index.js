@@ -9,6 +9,9 @@ import DemoLogin from './State/DemoLogin';
 //import css: Ảnh hưởng toàn bộ ứng dụng
 import './index.scss';
 import TangGiamFontSize from './State/TangGiamFontSize/TangGiamFontSize';
+import DemoProps from './props/DemoProps/DemoProps';
+import BaiTapShop from './props/BaiTapShop/BaiTapShop';
+import BaiTapXemChiTiet from './props/BaiTapXemChiTiet/BaiTapXemChiTiet';
 
 
 
@@ -22,7 +25,10 @@ root.render(
     {/* <DataBinding /> */}
     {/* <HandleEvent /> */}
     {/* <DemoLogin /> */}
-    <TangGiamFontSize />
+    {/* <TangGiamFontSize /> */}
+    {/* <DemoProps /> */}
+    {/* <BaiTapShop /> */}
+    <BaiTapXemChiTiet />
   </>
   
 )
