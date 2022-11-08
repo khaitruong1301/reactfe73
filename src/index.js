@@ -12,7 +12,14 @@ import TangGiamFontSize from './State/TangGiamFontSize/TangGiamFontSize';
 import DemoProps from './props/DemoProps/DemoProps';
 import BaiTapShop from './props/BaiTapShop/BaiTapShop';
 import BaiTapXemChiTiet from './props/BaiTapXemChiTiet/BaiTapXemChiTiet';
-
+//Cấu hình react router
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Register from './Pages/Register/Register';
+import Login from './Pages/Login/Login';
+import Home from './Pages/Home/Home';
+import HomeTemplate from './templates/HomeTemplate';
+import Page404 from './Pages/Page404/Page404';
+import BaiTapGioHang from './Pages/BaiTapGioHang/BaiTapGioHang';
 
 
 
@@ -21,14 +28,21 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //JSX 
 root.render(
   <>
-    {/* <HomeLayout /> */}
-    {/* <DataBinding /> */}
-    {/* <HandleEvent /> */}
-    {/* <DemoLogin /> */}
-    {/* <TangGiamFontSize /> */}
-    {/* <DemoProps /> */}
-    {/* <BaiTapShop /> */}
-    <BaiTapXemChiTiet />
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<HomeTemplate />}>
+          <Route index element={<Home />} ></Route>
+          <Route path='home' element={<Home />} ></Route>
+          <Route path='register' element={<Register />} ></Route>
+          <Route path='login' element={<Login />} ></Route>
+          <Route path='btgiohang' element={<BaiTapGioHang />} ></Route>
+          {/* <Route path='*' element={<Page404 />}></Route> */}
+          <Route path='*' element={<Navigate to="" />}></Route>
+
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   </>
-  
+
 )
