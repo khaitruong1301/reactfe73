@@ -20,6 +20,8 @@ import Home from './Pages/Home/Home';
 import HomeTemplate from './templates/HomeTemplate';
 import Page404 from './Pages/Page404/Page404';
 import BaiTapGioHang from './Pages/BaiTapGioHang/BaiTapGioHang';
+import ReactForm from './Pages/Form/ReactForm';
+import ReactLifeCycle from './Pages/ReactLifeCycle/ReactLifeCycle';
 
 
 
@@ -36,6 +38,8 @@ root.render(
           <Route path='register' element={<Register />} ></Route>
           <Route path='login' element={<Login />} ></Route>
           <Route path='btgiohang' element={<BaiTapGioHang />} ></Route>
+          <Route path='form' element={<ReactForm />} ></Route>
+          <Route path='reactlifecycle' element={<ReactLifeCycle />}></Route>
           {/* <Route path='*' element={<Page404 />}></Route> */}
           <Route path='*' element={<Navigate to="" />}></Route>
 

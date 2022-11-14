@@ -13,6 +13,8 @@ export default class HomeTemplate extends Component {
                         <i className='fa fa-cart-plus'></i> BT giỏ hàng
 
                     </NavLink>
+                    <NavLink className={({isActive})=> isActive ? 'nav-link bg-white text-dark' : 'nav-link' } to='/form'>Form</NavLink>
+                    <NavLink className={({isActive})=> isActive ? 'nav-link bg-white text-dark' : 'nav-link' } to='/reactlifecycle'>React lifecycle</NavLink>
                 </header>
                 <div className='content' style={{minHeight:'75vh'}}>
                     <Outlet />
