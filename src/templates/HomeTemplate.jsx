@@ -15,6 +15,7 @@ export default class HomeTemplate extends Component {
                     </NavLink>
                     <NavLink className={({isActive})=> isActive ? 'nav-link bg-white text-dark' : 'nav-link' } to='/form'>Form</NavLink>
                     <NavLink className={({isActive})=> isActive ? 'nav-link bg-white text-dark' : 'nav-link' } to='/reactlifecycle'>React lifecycle</NavLink>
+                    <NavLink className={({isActive})=> isActive ? 'nav-link bg-white text-dark' : 'nav-link' } to='/redux'>Redux</NavLink>
                 </header>
                 <div className='content' style={{minHeight:'75vh'}}>
                     <Outlet />
