@@ -1,6 +1,7 @@
 //File cấu hình store để chứa các state của ứng dụng
 import { configureStore } from '@reduxjs/toolkit';
 import { arrNguoiDungReducer } from './reducers/arrNguoiDungReducer';
+import { gameReducer } from './reducers/gameReducer';
 
 
 export const store = configureStore({
@@ -25,7 +26,8 @@ export const store = configureStore({
                 default : return state;
             }
         },
-        arrNguoiDungReducer: arrNguoiDungReducer
+        arrNguoiDungReducer: arrNguoiDungReducer,
+        gameReducer:gameReducer
 
     }
 })
