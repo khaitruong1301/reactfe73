@@ -12,6 +12,7 @@ const UseStateDemo = () => {
     let [number, setNumber] = useState(10);  //[state,hamSetState]
     let [fontSize, setFontSize] = useState(16);
 
+  
     const handleChangeFontSize = (fSize) => {
         let newFontSize = fontSize + fSize;
         //setState thì giá trị mới thay thế hoàn toàn giá trị cũ => render lại

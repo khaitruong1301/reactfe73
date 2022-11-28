@@ -24,10 +24,31 @@ export default class HomeTemplate extends Component {
                         <ul className="dropdown-menu">
                             <li>
                                 <NavLink className="dropdown-item" to="/demo-usestate">Use State</NavLink></li>
-                            
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-useeffect">Use effect</NavLink></li>
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-usecallback">Use callback</NavLink></li>
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-usememo">Use memo</NavLink></li>
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-useredux">Use redux</NavLink></li>
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-useref">Use ref</NavLink></li>
                         </ul>
                     </div>
-
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Route
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li>
+                                <NavLink className="dropdown-item" to="/demo-usenavigate">Use navigate</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className="dropdown-item" to="/search">Use search param</NavLink>
+                            </li>
+                        </ul>
+                    </div>
 
 
 

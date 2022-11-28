@@ -29,6 +29,15 @@ import { Provider } from 'react-redux';
 import { store } from './redux/configStore';
 import BaiTapGame from './Pages/DemoRedux/BaiTapGame/BaiTapGame';
 import UseStateDemo from './HookDemo/UseStateDemo/UseStateDemo';
+import UseEffectDemo from './HookDemo/UseEffectDemo/UseEffectDemo';
+import { UseCallbackDemo } from './HookDemo/UseCallbackDemo/UseCallbackDemo';
+import { UseMemoDemo } from './HookDemo/UseMemoDemo/UseMemoDemo';
+import DemoUseRedux from './HookDemo/UseRedux/DemoUseRedux';
+import UseRefDemo from './HookDemo/UseRefDemo/UseRefDemo';
+import LoginDemo from './HookDemo/UseNavigateDemo/LoginDemo';
+import ProfileDemo from './HookDemo/UseNavigateDemo/ProfileDemo';
+import Detail from './Pages/Detail/Detail';
+import UseSearchParamDemo from './HookDemo/UseSearchParamDemo/UseSearchParamDemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -50,7 +59,20 @@ root.render(
             <Route path='redux' element={<DemoRedux />}></Route>
             <Route path='demogame' element={<BaiTapGame />}></Route>
             <Route path='demo-usestate' element={<UseStateDemo />}></Route>
+            <Route path='demo-useeffect' element={<UseEffectDemo />}></Route>
+            <Route path='demo-usecallback' element={<UseCallbackDemo />}></Route>
+            <Route path='demo-usememo' element={<UseMemoDemo />}></Route>
+            <Route path='demo-useredux' element={<DemoUseRedux />}></Route>
+            <Route path='demo-useref' element={<UseRefDemo />}></Route>
+            <Route path='demo-usenavigate' element={<LoginDemo />}></Route>
+            <Route path='profile' element={<ProfileDemo />}></Route>
+            <Route path='search' element={<UseSearchParamDemo />}></Route>
+            <Route path='detail'>
+              <Route path=':idProduct' element={<Detail />}></Route>
 
+            </Route>
+
+           
             {/* <Route path='*' element={<Page404 />}></Route> */}
             <Route path='*' element={<Navigate to="" />}></Route>
 
